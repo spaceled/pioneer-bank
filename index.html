@@ -10,12 +10,14 @@
 </head>
 <body>
     <div id="login-area">
-        <h1 class="text-center">Welcome to Tahmina Nasrin's Bank</h1>
+        <h1 class="text-center">Welcome to Pioneer Bank</h1>
         <div class="submit-area">
             <h4>Login</h4>
             <input type="text" class="form-control" placeholder="Email">
-            <input type="password" class="form-control mt-3" placeholder="Password">
-            <button id="login" class="btn btn-success mt-3">Enter</button>
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
     <div id="transaction-area">
@@ -29,7 +31,7 @@
             <div class="col-md-4">
                 <div class="withdraw status">
                     <h5>Withdraw</h5>
-                    <h2>$ 00</span></h2>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -43,15 +45,17 @@
             <div class="col-md-6">
                 <div class="submit-area">
                     <h4>Deposit</h4>
-                    <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit">
-                    <button id="addDeposit" class="btn btn-success mt-3">Deposit</button>
+                    <input id="depositAmount" type="text" class="form-control" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="submit-area ">
+                <div class="submit-area">
                     <h4>Withdraw</h4>
-                    <input id="withdrawAmount" type="text" class="form-control"placeholder="$ amount you want to withdraw">
-                    <button id="addWithdraw" class="btn btn-success mt-3">Withdraw</button>
+                    <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
         </div>
